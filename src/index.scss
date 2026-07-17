@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 // import Carbon styles here
-@import 'carbon-components/scss/globals/scss/styles';
+@use '@carbon/styles';
 @import '@elyra/canvas/dist/styles/common-canvas.min.css';
 
 html {
