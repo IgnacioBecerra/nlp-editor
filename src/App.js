@@ -16,7 +16,7 @@
  */
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Header, HeaderName } from 'carbon-components-react';
+import { Header, HeaderName } from '@carbon/react';
 import VisualEditor from './nlp-visual-editor';
 
 import { store } from './redux/store';
