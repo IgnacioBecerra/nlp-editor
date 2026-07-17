@@ -159,8 +159,8 @@ class DictionaryPanel extends React.Component {
     }
   };
 
-  onChangeExternalResource = (value) => {
-    this.setState({ externalResourceChecked: value });
+  onChangeExternalResource = (_evt, { checked }) => {
+    this.setState({ externalResourceChecked: checked });
   };
 
   onSavePane = () => {
@@ -242,11 +242,14 @@ class DictionaryPanel extends React.Component {
           onChange={this.onFilesSelected}
         />
         <Toggle
+          id="toggle-map-terms"
           toggled={mapTerms}
           onToggle={() => {
             this.setState({ mapTerms: !mapTerms });
           }}
           labelText="Map Terms"
+          labelA="Off"
+          labelB="On"
         />
         <DataTable
           rows={this.getDisplayedItems().map((item) => {
@@ -295,93 +298,95 @@ class DictionaryPanel extends React.Component {
                   },
                 ]
           }
-          render={(props) => {
-            return (
-              <TableContainer style={{ marginTop: '10px' }}>
-                <TableToolbar>
-                  <TableBatchActions
-                    {...props.getBatchActionProps({
-                      totalSelected: this.state.itemsSelected.length,
-                    })}
+        >
+          {(props) => (
+            <TableContainer style={{ marginTop: '10px' }}>
+              <TableToolbar>
+                <TableBatchActions
+                  {...props.getBatchActionProps({
+                    totalSelected: this.state.itemsSelected.length,
+                  })}
+                >
+                  <TableBatchAction
+                    onClick={() => {
+                      this.onDeleteItems(props);
+                    }}
+                    renderIcon={TrashCan}
+                    iconDescription="Delete"
+                  />
+                </TableBatchActions>
+                <TableToolbarContent style={{ height: 'fit-content' }}>
+                  <TextInput
+                    id="dict-phrase-input"
+                    labelText="Enter a phrase"
+                    hideLabel
+                    value={this.state.inputText}
+                    invalid={errorMessage !== undefined}
+                    invalidText={errorMessage}
+                    placeholder="Enter a phrase to match..."
+                    onChange={(event) => {
+                      this.setState({ inputText: event.target.value ?? '' });
+                    }}
+                    onKeyDown={(event) => {
+                      const { inputText, items } = this.state;
+                      if (
+                        event.keyCode === 13 &&
+                        inputText !== '' &&
+                        !items.includes(inputText)
+                      ) {
+                        this.setState({
+                          items: [...items, this.state.inputText],
+                          inputText: '',
+                        });
+                      }
+                    }}
+                  />
+                  <Button
+                    tabIndex={0}
+                    onClick={() => {
+                      const { items, inputText } = this.state;
+                      if (inputText !== '' && !items.includes(inputText)) {
+                        this.setState({
+                          items: [...items, inputText],
+                          inputText: '',
+                        });
+                      }
+                    }}
+                    size="sm"
+                    kind="primary"
                   >
-                    <TableBatchAction
-                      onClick={() => {
-                        this.onDeleteItems(props);
-                      }}
-                      renderIcon={TrashCan}
-                      iconDescription="Delete"
-                    />
-                  </TableBatchActions>
-                  <TableToolbarContent style={{ height: 'fit-content' }}>
-                    <TextInput
-                      value={this.state.inputText}
-                      invalid={errorMessage !== undefined}
-                      invalidText={errorMessage}
-                      placeholder="Enter a phrase to match..."
-                      onChange={(event) => {
-                        this.setState({ inputText: event.target.value ?? '' });
-                      }}
-                      onKeyDown={(event) => {
-                        const { inputText, items } = this.state;
-                        if (
-                          event.keyCode === 13 &&
-                          inputText !== '' &&
-                          !items.includes(inputText)
-                        ) {
-                          this.setState({
-                            items: [...items, this.state.inputText],
-                            inputText: '',
-                          });
-                        }
-                      }}
-                    />
-                    <Button
-                      tabIndex={0}
-                      onClick={() => {
-                        const { items, inputText } = this.state;
-                        if (inputText !== '' && !items.includes(inputText)) {
-                          this.setState({
-                            items: [...items, inputText],
-                            inputText: '',
-                          });
-                        }
-                      }}
-                      size="small"
-                      kind="primary"
-                    >
-                      Add new
-                    </Button>
-                  </TableToolbarContent>
-                </TableToolbar>
-                <Table {...props.getTableProps()}>
-                  {mapTerms && (
-                    <TableHead>
-                      <TableRow key="headerRow">
-                        <TableSelectAll {...props.getSelectionProps()} />
-                        <TableHeader id="valueHeader" key="valueHeader">
-                          Term
-                        </TableHeader>
-                        <TableHeader id="mappedHeader" key="mappedHeader">
-                          Mapped Term
-                        </TableHeader>
-                      </TableRow>
-                    </TableHead>
-                  )}
-                  <TableBody>
-                    {props.rows.map((row) => (
-                      <TableRow key={row.id}>
-                        <TableSelectRow {...props.getSelectionProps({ row })} />
-                        {row.cells.map((cell) => (
-                          <TableCell key={cell.id}>{cell.value}</TableCell>
-                        ))}
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            );
-          }}
-        />
+                    Add new
+                  </Button>
+                </TableToolbarContent>
+              </TableToolbar>
+              <Table {...props.getTableProps()} aria-label="Dictionary terms">
+                {mapTerms && (
+                  <TableHead>
+                    <TableRow key="headerRow">
+                      <TableSelectAll {...props.getSelectionProps()} />
+                      <TableHeader id="valueHeader" key="valueHeader">
+                        Term
+                      </TableHeader>
+                      <TableHeader id="mappedHeader" key="mappedHeader">
+                        Mapped Term
+                      </TableHeader>
+                    </TableRow>
+                  </TableHead>
+                )}
+                <TableBody>
+                  {props.rows.map((row) => (
+                    <TableRow key={row.id}>
+                      <TableSelectRow {...props.getSelectionProps({ row })} />
+                      {row.cells.map((cell) => (
+                        <TableCell key={cell.id}>{cell.value}</TableCell>
+                      ))}
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          )}
+        </DataTable>
         <Pagination
           page={this.state.page}
           pageSizes={[10, 20, 50]}

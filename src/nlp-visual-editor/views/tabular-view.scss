@@ -34,7 +34,7 @@ limitations under the License.
     display: flex;
 
     .info-icon {
-      color: rgb(0, 67, 206);
+      color: var(--cds-link-primary, #0043ce);
     }
 
     span {

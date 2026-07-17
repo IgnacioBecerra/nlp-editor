@@ -23,13 +23,13 @@ limitations under the License.
 
   .header {
     display: flex;
-    background-color: #e0e0e0;
+    background-color: var(--cds-layer-01, #e0e0e0);
     padding: 0.8rem 0.5rem;
 
     .title {
       display: inline-flex;
       align-items: center;
-      color: rgb(0, 67, 206);
+      color: var(--cds-link-primary, #0043ce);
       font-size: 1.3rem;
       font-weight: 500;
       margin-left: 0.2rem;
@@ -37,7 +37,7 @@ limitations under the License.
     }
 
     .doc-viewer-icon {
-      fill: rgb(0, 67, 206);
+      fill: var(--cds-link-primary, #0043ce);
     }
 
     .doc-viewer-close {

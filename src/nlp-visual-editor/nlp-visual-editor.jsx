@@ -546,15 +546,15 @@ class VisualEditor extends React.Component {
           jsx: (
             <>
               <Button
-                id={'btn-save'}
-                size="field"
-                kind="ghost"
-                iconDescription="Editor Settings"
-                renderIcon={(props) => <SettingsAdjust size={32} {...props} />}
-                onClick={() => this.showSettings()}
-              >
-                Settings
-              </Button>
+                  id={'btn-save'}
+                  size="md"
+                  kind="ghost"
+                  iconDescription="Editor Settings"
+                  renderIcon={(props) => <SettingsAdjust size={32} {...props} />}
+                  onClick={() => this.showSettings()}
+                >
+                  Settings
+                </Button>
             </>
           ),
         },
@@ -565,7 +565,7 @@ class VisualEditor extends React.Component {
             <>
               <Button
                 id={'btn-save'}
-                size="field"
+                size="md"
                 kind="ghost"
                 iconDescription="Save document"
                 renderIcon={(props) => <DocumentDownload size={32} {...props} />}
@@ -603,7 +603,7 @@ class VisualEditor extends React.Component {
             <>
               <Button
                 id={'btn-run'}
-                size="field"
+                size="md"
                 kind="primary"
                 renderIcon={(props) => <Play size={32} {...props} />}
                 disabled={!enableFlowExecutionBtn}
@@ -621,7 +621,7 @@ class VisualEditor extends React.Component {
             <>
               <Button
                 id={'btn-run'}
-                size="field"
+                size="md"
                 kind="ghost"
                 disabled={this.props.tabularResults === undefined}
                 onClick={() => this.runPipeline(true)}
@@ -638,7 +638,7 @@ class VisualEditor extends React.Component {
           tooltip: 'Select Language',
           jsx: (
             <>
-              <Button id={'btn-language'} size="field" kind="ghost" disabled>
+              <Button id={'btn-language'} size="md" kind="ghost" disabled>
                 Language ({languages[this.state.editorSettings.language]})
               </Button>
             </>
@@ -1043,7 +1043,8 @@ class VisualEditor extends React.Component {
         modalHeading={heading}
         primaryButtonText="OK"
         size="sm"
-        onClick={this.onErrorModalClosed}
+        onRequestClose={this.onErrorModalClosed}
+        onRequestSubmit={this.onErrorModalClosed}
       >
         <div className="warning-modal">
           <WarningAlt size={24} aria-label="Warning" className="warning-icon" />

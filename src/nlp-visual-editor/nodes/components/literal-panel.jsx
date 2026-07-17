@@ -44,8 +44,8 @@ class LiteralPanel extends React.Component {
     }
   }
 
-  onChangeLemmaMatch = (value) => {
-    this.setState({ lemmaMatch: value });
+  onChangeLemmaMatch = (_evt, { checked }) => {
+    this.setState({ lemmaMatch: checked });
   };
 
   onSavePane = () => {

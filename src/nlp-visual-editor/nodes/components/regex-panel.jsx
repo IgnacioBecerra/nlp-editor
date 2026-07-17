@@ -195,7 +195,7 @@ class RegexPanel extends React.Component {
               labelText="Token range"
               id="chkTokenRange"
               checked={tokenRange.checked}
-              onChange={(checked) =>
+              onChange={(_evt, { checked }) =>
                 this.setState({ tokenRange: { ...tokenRange, checked } })
               }
             />
@@ -211,12 +211,12 @@ class RegexPanel extends React.Component {
                 invalidText="Number is not valid"
                 className="number-range"
                 disabled={!tokenRange.checked}
-                onChange={(e) => {
+                onChange={(_evt, { value }) => {
                   const { range, checked } = tokenRange;
                   this.setState({
                     tokenRange: {
                       checked,
-                      range: [e.imaginaryTarget.value, range[1]],
+                      range: [value, range[1]],
                     },
                   });
                 }}
@@ -233,12 +233,12 @@ class RegexPanel extends React.Component {
                 invalidText="Number is not valid"
                 className="number-range"
                 disabled={!tokenRange.checked}
-                onChange={(e) => {
+                onChange={(_evt, { value }) => {
                   const { range, checked } = tokenRange;
                   this.setState({
                     tokenRange: {
                       checked,
-                      range: [range[0], e.imaginaryTarget.value],
+                      range: [range[0], value],
                     },
                   });
                 }}
@@ -252,28 +252,36 @@ class RegexPanel extends React.Component {
               id="chkCanEq"
               checked={canonEq}
               disabled={disableCheckboxes}
-              onChange={(checked) => this.setState({ canonEq: checked })}
+              onChange={(_evt, { checked }) =>
+                this.setState({ canonEq: checked })
+              }
             />
             <Checkbox
               labelText="Read line delimiters as characters (DOTALL)"
               id="chkLineDel"
               checked={dotAll}
               disabled={caseSensitivity === 'match' || disableCheckboxes}
-              onChange={(checked) => this.setState({ dotAll: checked })}
+              onChange={(_evt, { checked }) =>
+                this.setState({ dotAll: checked })
+              }
             />
             <Checkbox
               labelText="^ and $ begin and end a line (MULTILINE)"
               id="chkParams"
               checked={multiline}
               disabled={disableCheckboxes}
-              onChange={(checked) => this.setState({ multiline: checked })}
+              onChange={(_evt, { checked }) =>
+                this.setState({ multiline: checked })
+              }
             />
             <Checkbox
               labelText="Newline character ( ) ends a line (UNIX_LINES)"
               id="chkNewline"
               checked={unixLines}
               disabled={disableCheckboxes}
-              onChange={(checked) => this.setState({ unixLines: checked })}
+              onChange={(_evt, { checked }) =>
+                this.setState({ unixLines: checked })
+              }
             />
           </div>
         </div>

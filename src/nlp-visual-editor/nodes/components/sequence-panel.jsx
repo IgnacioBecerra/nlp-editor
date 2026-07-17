@@ -257,7 +257,7 @@ class SequencePanel extends React.Component {
               <Checkbox
                 id={`check${node.nodeId}`}
                 labelText=""
-                onChange={(value) => this.onSaveAttributeVisible(node, value)}
+                onChange={(_evt, { checked }) => this.onSaveAttributeVisible(node, checked)}
                 checked={node.visible}
               />
               {node.renamed || node.label}

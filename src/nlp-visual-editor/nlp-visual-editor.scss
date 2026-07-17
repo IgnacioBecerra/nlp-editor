@@ -26,7 +26,7 @@ limitations under the License.
   }
 
   .right-flyout-panel {
-    border-left: 1px solid #e0e0e0;
+    border-left: 1px solid var(--cds-border-subtle-01, #e0e0e0);
   }
 
   .warning-modal {
@@ -34,7 +34,7 @@ limitations under the License.
     padding-left: 0.5rem;
 
     .warning-icon {
-      fill: rgb(255, 131, 43);
+      fill: var(--cds-support-warning, #f1c21b);
     }
 
     span {
