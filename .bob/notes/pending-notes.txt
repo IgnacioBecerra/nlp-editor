@@ -1,1 +1,0 @@
-{"id":"aabd2a1c-b491-49c5-849e-c31e961c9115","ts":"2026-07-17T22:43:53.087Z","path":"/Users/ignacio.becerra/Documents/GitHub/nlp-editor/src/index.scss","version":"1.0.0","taskID":"18809023-4d69-4961-b22e-1f66fb71c191"}

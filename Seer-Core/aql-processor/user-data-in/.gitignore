@@ -2,3 +2,8 @@
 *
 # Except this file
 !.gitignore
+.carbon-migration/
+.bob/
+CLAUDE.md
+AGENTS.md
+.DS_Store

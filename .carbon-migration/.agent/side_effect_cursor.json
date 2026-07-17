@@ -6,7 +6,7 @@
   "groupBranch": "mig/2m6oxm88--nlp-visual-editor-views-components",
   "integrationBranch": "mig/2m6oxm88",
   "terminalStop": null,
-  "runSealedAt": null,
+  "runSealedAt": "2026-07-17T22:49:08.904Z",
   "dispatcherCompletion": {
     "primaryCompleted": true,
     "secondaryCompleted": [],
@@ -16,12 +16,12 @@
   "finalization": {
     "groupMerged": true,
     "consolidationTriggered": true,
-    "finalFedRefinementCompleted": false,
-    "qaRecorded": false,
-    "auditCompleted": false,
-    "prepAccepted": false,
-    "migrationCompletePublished": false
+    "finalFedRefinementCompleted": true,
+    "qaRecorded": true,
+    "auditCompleted": true,
+    "prepAccepted": true,
+    "migrationCompletePublished": true
   },
   "createdAt": "2026-07-17T22:38:39.441Z",
-  "updatedAt": "2026-07-17T22:41:09.137Z"
+  "updatedAt": "2026-07-17T22:49:08.904Z"
 }

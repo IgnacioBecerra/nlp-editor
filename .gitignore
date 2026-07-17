@@ -45,3 +45,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+.carbon-migration/
+.bob/
+CLAUDE.md
+AGENTS.md
