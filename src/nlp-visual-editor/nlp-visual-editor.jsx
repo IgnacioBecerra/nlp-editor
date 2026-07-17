@@ -24,14 +24,14 @@ import {
   CanvasController,
   CommonProperties,
 } from '@elyra/canvas';
-import { Button, Loading, Modal } from 'carbon-components-react';
+import { Button, Loading, Modal } from '@carbon/react';
 import {
-  Play32,
-  WarningAlt24,
-  DocumentDownload32,
-  Upload16,
-  SettingsAdjust32,
-  Close24,
+  Play,
+  WarningAlt,
+  DocumentDownload,
+  Upload,
+  SettingsAdjust,
+  Close,
 } from '@carbon/icons-react';
 import nlpPalette from '../config/nlpPalette.json';
 import RHSPanel from './components/rhs-panel';
@@ -550,7 +550,7 @@ class VisualEditor extends React.Component {
                 size="field"
                 kind="ghost"
                 iconDescription="Editor Settings"
-                renderIcon={SettingsAdjust32}
+                renderIcon={(props) => <SettingsAdjust size={32} {...props} />}
                 onClick={() => this.showSettings()}
               >
                 Settings
@@ -568,7 +568,7 @@ class VisualEditor extends React.Component {
                 size="field"
                 kind="ghost"
                 iconDescription="Save document"
-                renderIcon={DocumentDownload32}
+                renderIcon={(props) => <DocumentDownload size={32} {...props} />}
                 onClick={this.savePipeline}
               >
                 Save
@@ -581,7 +581,7 @@ class VisualEditor extends React.Component {
           tooltip: 'Open NLP Flow',
           jsx: (
             <>
-              <label className="bx--btn bx--btn--md bx--btn--ghost">
+              <label className="cds--btn cds--btn--md cds--btn--ghost">
                 Open
                 <input
                   type="file"
@@ -591,7 +591,7 @@ class VisualEditor extends React.Component {
                   accept=".json"
                   onChange={this.onFlowSelected}
                 />
-                <Upload16 />
+                <Upload size={16} />
               </label>
             </>
           ),
@@ -605,7 +605,7 @@ class VisualEditor extends React.Component {
                 id={'btn-run'}
                 size="field"
                 kind="primary"
-                renderIcon={Play32}
+                renderIcon={(props) => <Play size={32} {...props} />}
                 disabled={!enableFlowExecutionBtn}
                 onClick={() => this.runPipeline(false)}
               >
@@ -1046,7 +1046,7 @@ class VisualEditor extends React.Component {
         onClick={this.onErrorModalClosed}
       >
         <div className="warning-modal">
-          <WarningAlt24 aria-label="Warning" className="warning-icon" />
+          <WarningAlt size={24} aria-label="Warning" className="warning-icon" />
           <span>{errorMessage}</span>
         </div>
       </Modal>
@@ -1056,7 +1056,8 @@ class VisualEditor extends React.Component {
   getTabularView = () => {
     return (
       <Provider store={store}>
-        <Close24
+        <Close
+          size={24}
           aria-label="Document Viewer"
           className="doc-viewer-close"
           onClick={() => this.setState({ showBottomPanel: false })}
