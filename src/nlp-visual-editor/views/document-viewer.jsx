@@ -17,7 +17,7 @@ limitations under the License.
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { Close24, Document24 } from '@carbon/icons-react';
+import { Close, Document } from '@carbon/icons-react';
 import NlpResultsHighlight from './components/nlp-results-highlight';
 import './document-viewer.scss';
 
@@ -62,12 +62,14 @@ class DocumentViewer extends React.Component {
       <div className="document-viewer">
         <>
           <div className="header">
-            <Document24
+            <Document
+              size={24}
               aria-label="Document Viewer"
               className="doc-viewer-icon"
             />
             <div className="title">Document - {docName}</div>
-            <Close24
+            <Close
+              size={24}
               aria-label="Document Viewer"
               className="doc-viewer-close"
               onClick={() => this.props.setShowRightPanel({ showPanel: false })}

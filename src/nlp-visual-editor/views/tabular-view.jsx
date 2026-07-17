@@ -16,21 +16,29 @@ limitations under the License.
 */
 import React from 'react';
 import { connect } from 'react-redux';
-import { Information24 } from '@carbon/icons-react';
+import { Information } from '@carbon/icons-react';
 
 import './tabular-view.scss';
 
-import { Tabs, Tab, TabsSkeleton } from 'carbon-components-react';
+import { Tabs, TabList, Tab, TabPanels, TabPanel, TabsSkeleton } from '@carbon/react';
 import TableResults from './components/table-results';
 import { setDocumentViewToAnnotation } from '../../redux/slice';
 
 class TabularView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedIndex: 0,
+    };
+  }
+
   getInputDocumentName = () => {
     const { nodes } = this.props;
     const node = nodes.find((n) => n.type === 'input') || {};
     const { name } = node.files[0];
     return name;
   };
+
   getTable = (name) => {
     const { tabularResults, onRowSelected } = this.props;
     const { annotations } = tabularResults;
@@ -39,7 +47,7 @@ class TabularView extends React.Component {
     if (data.length === 0) {
       return (
         <div className="no-matches">
-          <Information24 aria-label="Information" className="info-icon" />
+          <Information size={24} aria-label="Information" className="info-icon" />
           <span>No matches found.</span>
         </div>
       );
@@ -66,22 +74,45 @@ class TabularView extends React.Component {
     }
     const { names } = tabularResults;
     const tabs = [];
-    names.forEach((name) => {
+    const tabPanels = [];
+    names.forEach((name, index) => {
       const table = this.getTable(name);
       const tabId = `${name.toLowerCase()}_id`;
       tabs.push(
         <Tab
-          id={tabId}
           key={tabId}
-          label={name}
-          title={name}
-          onClick={() => this.props.setDocumentAnnotation(name)}
+          onClick={() => {
+            this.setState({ selectedIndex: index });
+            this.props.setDocumentAnnotation(name);
+          }}
         >
-          {table}
+          {name}
         </Tab>,
       );
+      tabPanels.push(
+        <TabPanel key={`${tabId}_panel`}>
+          {table}
+        </TabPanel>,
+      );
     });
-    return <Tabs light={true}>{tabs}</Tabs>;
+    return (
+      <Tabs
+        selectedIndex={this.state.selectedIndex}
+        onChange={({ selectedIndex }) => {
+          this.setState({ selectedIndex });
+          if (names[selectedIndex]) {
+            this.props.setDocumentAnnotation(names[selectedIndex]);
+          }
+        }}
+      >
+        <TabList aria-label="Tabular results">
+          {tabs}
+        </TabList>
+        <TabPanels>
+          {tabPanels}
+        </TabPanels>
+      </Tabs>
+    );
   };
 
   render() {

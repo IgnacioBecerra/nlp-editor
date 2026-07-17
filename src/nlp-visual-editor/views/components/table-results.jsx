@@ -25,7 +25,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from 'carbon-components-react';
+} from '@carbon/react';
 
 const hasAttributeResult = (tabularData, docName, onRowSelected) => {
   return tabularData.map((row, index) => (
