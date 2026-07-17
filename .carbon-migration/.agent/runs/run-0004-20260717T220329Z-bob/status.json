@@ -1,0 +1,5 @@
+{
+  "status": "done",
+  "message": "Migrated 12 JSX/SCSS files: carbon-components-react \u2192 @carbon/react, icon size suffixes removed, bx-- \u2192 cds-- prefix. All \u00a78.1 greps pass. Committed f6bd92c and pushed.",
+  "progress_marker": "wu_39d4eb11bd-complete"
+}

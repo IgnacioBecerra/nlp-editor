@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "jobId": "2m6oxm88",
+  "migrationClass": "carbon-version-upgrade",
+  "pipeline": [
+    "front-end-developer",
+    "deviation-completeness-audit"
+  ],
+  "currentPhaseIndex": 0,
+  "phases": [
+    {
+      "name": "front-end-developer",
+      "status": "awaiting_retry",
+      "attempts": 8,
+      "startedAt": "2026-07-17T21:59:09.534Z",
+      "lastUpdatedAt": "2026-07-17T22:40:52.374Z",
+      "progressMarker": "front-end-developer/unknown-phase/unit-done/u:wu_689fb2607a",
+      "lastProgressMarkerChangeAt": "2026-07-17T22:40:52.374Z",
+      "lastOutcomeMessage": "Supervisor verified: agent_claimed_no_op_but_produced_commits. Reclassified done_no_op → done. Original message: Unit already migrated to Carbon v11. table-results.jsx imports from @carbon/react v11. No Carbon v10 artifacts found in any scoped file.",
+      "terminalReason": null
+    },
+    {
+      "name": "deviation-completeness-audit",
+      "status": "pending",
+      "attempts": 0,
+      "startedAt": null,
+      "lastUpdatedAt": null,
+      "progressMarker": null,
+      "lastProgressMarkerChangeAt": null,
+      "lastOutcomeMessage": null,
+      "terminalReason": null
+    }
+  ],
+  "featureGroupReviews": {},
+  "createdAt": "2026-07-17T21:47:22.896Z",
+  "updatedAt": "2026-07-17T22:40:52.374Z",
+  "terminalStatus": null
+}

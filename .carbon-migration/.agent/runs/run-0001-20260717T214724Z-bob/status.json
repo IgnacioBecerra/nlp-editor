@@ -1,0 +1,5 @@
+{
+  "status": "continue",
+  "message": "Carbon v10\u2192v11 dependency sync and import migration complete. Build blocked by webpack 5 ESM resolution: @carbon/react 1.109.0 \u2192 @floating-ui/react@^0.27.4 (peers React >=17) cannot resolve react/jsx-runtime from React 16.14.0 in nested node_modules. Requires toolchain reconciliation or Carbon version adjustment.",
+  "progress_marker": "wu_shared_metadata-deps-migrated-build-blocked"
+}

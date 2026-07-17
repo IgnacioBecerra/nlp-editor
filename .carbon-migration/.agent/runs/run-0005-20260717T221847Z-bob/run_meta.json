@@ -1,0 +1,43 @@
+{
+  "run_number": 5,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "63980100-c8a1-4c36-8561-95966cb7f863",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_6f045cd764",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T221847Z",
+  "returncode": 0,
+  "duration_seconds": 254.5,
+  "status": "done",
+  "progress_marker": "wu_6f045cd764-complete",
+  "message": "Unit wu_6f045cd764 complete. Migrated src/App.js (carbon-components-react \u2192 @carbon/react). Other 5 files had no Carbon imports. All \u00a78.1 greps pass. Committed 1632403, pushed to mig/2m6oxm88--src. Build shows out-of-scope nlp-visual-editor/* files still have v10 imports - those belong to another unit.",
+  "stdout_tokens_estimate": 17886,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12634,
+    "estimated_output_tokens": 5218,
+    "estimated_total_tokens": 17852,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": {
+    "hash": "1632403ba8c93e3320517b196e34a846f31441bf",
+    "short_hash": "1632403",
+    "subject": "migrate(wu_6f045cd764): src",
+    "date": "2026-07-17 15:22:08 -0700",
+    "branch": "mig/2m6oxm88--src",
+    "diff_stat": "src/App.js | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)",
+    "files_changed": [
+      "src/App.js"
+    ]
+  }
+}

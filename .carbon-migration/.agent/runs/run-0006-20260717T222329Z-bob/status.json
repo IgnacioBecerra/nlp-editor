@@ -1,0 +1,5 @@
+{
+  "status": "done",
+  "message": "Migrated nlp-visual-editor unit: updated carbon-components-react to @carbon/react, migrated 6 icons to v11 pattern with size prop, updated bx-- to cds-- class prefix. Build fails on out-of-scope files (expected).",
+  "progress_marker": "wu_36de5a3668-complete"
+}

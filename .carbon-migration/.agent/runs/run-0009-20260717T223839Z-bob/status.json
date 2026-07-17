@@ -1,0 +1,5 @@
+{
+  "status": "done_no_op",
+  "message": "Unit already migrated to Carbon v11. table-results.jsx imports from @carbon/react v11. No Carbon v10 artifacts found in any scoped file.",
+  "progress_marker": "wu_689fb2607a-phase0-complete"
+}

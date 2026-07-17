@@ -1,0 +1,33 @@
+{
+  "run_number": 9,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "539e50ee-695b-4e9a-ad3a-50dd42aaadf8",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_689fb2607a",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T223839Z",
+  "returncode": 0,
+  "duration_seconds": 132.3,
+  "status": "done_no_op",
+  "progress_marker": "wu_689fb2607a-phase0-complete",
+  "message": "Unit already migrated to Carbon v11. table-results.jsx imports from @carbon/react v11. No Carbon v10 artifacts found in any scoped file.",
+  "stdout_tokens_estimate": 16522,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12812,
+    "estimated_output_tokens": 3688,
+    "estimated_total_tokens": 16500,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": null
+}

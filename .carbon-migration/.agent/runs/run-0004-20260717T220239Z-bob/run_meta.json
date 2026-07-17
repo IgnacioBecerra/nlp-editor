@@ -1,0 +1,33 @@
+{
+  "run_number": 4,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "f07f035e-7b95-487e-844b-c10d0be1ea10",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_39d4eb11bd",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T220239Z",
+  "returncode": 124,
+  "duration_seconds": 45.0,
+  "status": "infra_failed",
+  "progress_marker": "front-end-developer/startup/bob_preflight_failed",
+  "message": "Bob preflight failed before migration run: bob preflight timed out after 45s: (node:79117) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.",
+  "stdout_tokens_estimate": 0,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 0,
+    "estimated_output_tokens": 54,
+    "estimated_total_tokens": 54,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": null
+}

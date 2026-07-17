@@ -1,0 +1,5 @@
+{
+  "status": "done",
+  "message": "Migrated 3 component files from carbon-components-react to @carbon/react. Icon Edit16 migrated to Edit from @carbon/react/icons. All source-side leak greps passed. Committed and pushed successfully.",
+  "progress_marker": "wu_a49bf5aa9a-complete"
+}

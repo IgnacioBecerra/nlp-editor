@@ -1,0 +1,5 @@
+{
+  "status": "done",
+  "message": "Unit wu_6f045cd764 complete. Migrated src/App.js (carbon-components-react \u2192 @carbon/react). Other 5 files had no Carbon imports. All \u00a78.1 greps pass. Committed 1632403, pushed to mig/2m6oxm88--src. Build shows out-of-scope nlp-visual-editor/* files still have v10 imports - those belong to another unit.",
+  "progress_marker": "wu_6f045cd764-complete"
+}

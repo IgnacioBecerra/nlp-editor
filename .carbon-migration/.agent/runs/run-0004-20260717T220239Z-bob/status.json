@@ -1,0 +1,5 @@
+{
+  "status": "infra_failed",
+  "progress_marker": "front-end-developer/startup/bob_preflight_failed",
+  "message": "Bob preflight failed before migration run: bob preflight timed out after 45s: (node:79117) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead."
+}

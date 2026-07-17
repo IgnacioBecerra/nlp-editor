@@ -1,0 +1,43 @@
+{
+  "run_number": 6,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "ae85f530-a571-4969-be30-c752b2fc0544",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_36de5a3668",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T222329Z",
+  "returncode": 0,
+  "duration_seconds": 318.9,
+  "status": "done",
+  "progress_marker": "wu_36de5a3668-complete",
+  "message": "Migrated nlp-visual-editor unit: updated carbon-components-react to @carbon/react, migrated 6 icons to v11 pattern with size prop, updated bx-- to cds-- class prefix. Build fails on out-of-scope files (expected).",
+  "stdout_tokens_estimate": 19982,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12686,
+    "estimated_output_tokens": 7248,
+    "estimated_total_tokens": 19934,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": {
+    "hash": "17b7bc1dc5bffce78a3d52d562ef98e3de31d53f",
+    "short_hash": "17b7bc1",
+    "subject": "migrate(wu_36de5a3668): nlp-visual-editor",
+    "date": "2026-07-17 15:27:32 -0700",
+    "branch": "mig/2m6oxm88--nlp-visual-editor",
+    "diff_stat": "src/nlp-visual-editor/nlp-visual-editor.jsx | 29 +++++++++++++++--------------\n 1 file changed, 15 insertions(+), 14 deletions(-)",
+    "files_changed": [
+      "src/nlp-visual-editor/nlp-visual-editor.jsx"
+    ]
+  }
+}

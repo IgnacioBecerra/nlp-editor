@@ -1,0 +1,56 @@
+{
+  "run_number": 2,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "55410b1c-f27c-470e-8de1-56a53b5dfaef",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_shared_metadata",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T215331Z",
+  "returncode": 0,
+  "duration_seconds": 337.8,
+  "status": "done",
+  "progress_marker": "wu_shared_metadata-complete",
+  "message": "React 16→18 upgrade, @carbon/styles added, craco ESM config, SCSS @use migration. Build/test pass. Committed e2c54e4, pushed.",
+  "stdout_tokens_estimate": 27165,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 13141,
+    "estimated_output_tokens": 13994,
+    "estimated_total_tokens": 27135,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": {
+    "hash": "e2c54e46b7fc3548a5449a0aff67b6aa7d62f48d",
+    "short_hash": "e2c54e4",
+    "subject": "migrate(wu_shared_metadata): shared / dependencies + config",
+    "date": "2026-07-17 14:58:18 -0700",
+    "branch": "mig/2m6oxm88--shared-dependenciesconfig",
+    "diff_stat": "craco.config.js | 14 ++++++++++++++\n package.json    | 29 +++++++++++++++--------------\n src/index.scss  |  2 +-\n 3 files changed, 30 insertions(+), 15 deletions(-)",
+    "files_changed": [
+      "craco.config.js",
+      "package.json",
+      "src/index.scss"
+    ]
+  },
+  "scope_drift": {
+    "outOfScopeFiles": [
+      "craco.config.js",
+      "src/index.scss"
+    ],
+    "affectedGroups": [
+      "component_group"
+    ],
+    "protectedDependencyEdits": [],
+    "count": 2
+  }
+}

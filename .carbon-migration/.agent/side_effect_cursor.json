@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "jobId": "2m6oxm88",
+  "runId": "run_060cb4246fa2",
+  "unitId": "wu_689fb2607a",
+  "groupBranch": "mig/2m6oxm88--nlp-visual-editor-views-components",
+  "integrationBranch": "mig/2m6oxm88",
+  "terminalStop": null,
+  "runSealedAt": null,
+  "dispatcherCompletion": {
+    "primaryCompleted": true,
+    "secondaryCompleted": [],
+    "driftReconciledUnits": [],
+    "primaryUnitId": "wu_689fb2607a"
+  },
+  "finalization": {
+    "groupMerged": true,
+    "consolidationTriggered": true,
+    "finalFedRefinementCompleted": false,
+    "qaRecorded": false,
+    "auditCompleted": false,
+    "prepAccepted": false,
+    "migrationCompletePublished": false
+  },
+  "createdAt": "2026-07-17T22:38:39.441Z",
+  "updatedAt": "2026-07-17T22:41:09.137Z"
+}

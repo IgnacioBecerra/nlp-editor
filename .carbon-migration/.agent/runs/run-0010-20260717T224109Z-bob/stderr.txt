@@ -1,0 +1,9 @@
+(node:11000) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:11025) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+YOLO mode is enabled. All tool calls will be automatically approved.
+[ERROR] Error during discovery for server 'carbon-mcp': Connection failed for 'carbon-mcp': Streamable HTTP error: Error POSTing to endpoint: {"error":"Invalid token","detail":"\"exp\" claim timestamp check failed | Re-auth required: re-run the authorization flow to obtain a new auth code and session ID, then retry with the new Bearer token and X-MCP-Session."}
+Error executing tool read_file: File not found: /Users/ignacio.becerra/Documents/GitHub/nlp-editor/.carbon-migration/AGENT_OUTPUT_RULES.md
+Error executing tool read_file: File not found: /Users/ignacio.becerra/Documents/GitHub/nlp-editor/.carbon-migration/CARBON_MIGRATION_LEDGER.md
+Error executing tool read_file: File not found: /Users/ignacio.becerra/Documents/GitHub/nlp-editor/.carbon-migration/reviewer-report.json

@@ -1,0 +1,6 @@
+(node:63645) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:63670) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+YOLO mode is enabled. All tool calls will be automatically approved.
+[ERROR] Error during discovery for server 'carbon-mcp': Connection failed for 'carbon-mcp': Streamable HTTP error: Error POSTing to endpoint: {"error":"Invalid token","detail":"\"exp\" claim timestamp check failed | Re-auth required: re-run the authorization flow to obtain a new auth code and session ID, then retry with the new Bearer token and X-MCP-Session."}

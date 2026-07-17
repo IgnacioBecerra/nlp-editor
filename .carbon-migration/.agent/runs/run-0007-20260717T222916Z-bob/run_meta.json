@@ -1,0 +1,45 @@
+{
+  "run_number": 7,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "6f61a1eb-138a-4d4a-94ab-680311fc81af",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_a49bf5aa9a",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T222916Z",
+  "returncode": 0,
+  "duration_seconds": 211.1,
+  "status": "done",
+  "progress_marker": "wu_a49bf5aa9a-complete",
+  "message": "Migrated 3 component files from carbon-components-react to @carbon/react. Icon Edit16 migrated to Edit from @carbon/react/icons. All source-side leak greps passed. Committed and pushed successfully.",
+  "stdout_tokens_estimate": 18982,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12645,
+    "estimated_output_tokens": 6291,
+    "estimated_total_tokens": 18936,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": {
+    "hash": "5a959e5a9d3766b5204d4fa2ee5f911e88dd5f9b",
+    "short_hash": "5a959e5",
+    "subject": "migrate(wu_a49bf5aa9a): nlp-visual-editor/components",
+    "date": "2026-07-17 15:32:01 -0700",
+    "branch": "mig/2m6oxm88--nlp-visual-editor-components",
+    "diff_stat": "src/nlp-visual-editor/components/language-modal.jsx    | 2 +-\n src/nlp-visual-editor/components/rhs-panel-buttons.jsx | 2 +-\n src/nlp-visual-editor/components/rhs-panel.jsx         | 6 +++---\n 3 files changed, 5 insertions(+), 5 deletions(-)",
+    "files_changed": [
+      "src/nlp-visual-editor/components/language-modal.jsx",
+      "src/nlp-visual-editor/components/rhs-panel-buttons.jsx",
+      "src/nlp-visual-editor/components/rhs-panel.jsx"
+    ]
+  }
+}

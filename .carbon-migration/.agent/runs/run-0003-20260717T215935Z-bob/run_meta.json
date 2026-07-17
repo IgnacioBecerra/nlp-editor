@@ -1,0 +1,33 @@
+{
+  "run_number": 3,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "36725c0f-0313-4dca-9805-9bc371f7c2eb",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_77db029937",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T215935Z",
+  "returncode": 0,
+  "duration_seconds": 155.8,
+  "status": "done",
+  "progress_marker": "wu_77db029937-no-carbon-found",
+  "message": "Unit wu_77db029937 contains no Carbon v10 imports or UI components. All files are utility/server code outside migration boundary.",
+  "stdout_tokens_estimate": 17724,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12891,
+    "estimated_output_tokens": 4784,
+    "estimated_total_tokens": 17675,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": null
+}

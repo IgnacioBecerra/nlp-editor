@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "tokenMetrics": {
+    "runs": [
+      {
+        "invocationId": "cffc1647-f8bf-4750-a10d-43d751fb435e",
+        "jobId": "2m6oxm88",
+        "unitId": null,
+        "role": "front-end-developer",
+        "agent": "bob",
+        "model": null,
+        "runReason": "fed_final_refinement",
+        "runEnvironment": "production",
+        "runNumber": 10,
+        "startedAt": "20260717T224109Z",
+        "durationSeconds": 332.1,
+        "tokenAccounting": {
+          "method": "chars4_estimate",
+          "exact": false,
+          "agent": "bob",
+          "model": null,
+          "estimated_input_tokens": 11398,
+          "estimated_output_tokens": 7299,
+          "estimated_total_tokens": 18697,
+          "estimated_cache_read_input_tokens": null,
+          "estimated_cache_creation_input_tokens": null,
+          "total_cost_usd": null,
+          "confidence": "medium"
+        }
+      }
+    ],
+    "summary": {
+      "runCount": 1,
+      "exactRunCount": 0,
+      "estimatedRunCount": 1,
+      "unavailableRunCount": 0,
+      "totalCostUsd": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "estimatedInputTokens": 11398,
+      "estimatedOutputTokens": 7299,
+      "estimatedTotalTokens": 18697,
+      "byRunReason": {
+        "fed_final_refinement": 1
+      },
+      "byRole": {
+        "front-end-developer": 1
+      },
+      "byAgent": {
+        "bob": 1
+      },
+      "byRoleRunReason": {
+        "front-end-developer|fed_final_refinement": 1
+      }
+    }
+  }
+}

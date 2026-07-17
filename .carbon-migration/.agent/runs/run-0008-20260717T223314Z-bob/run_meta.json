@@ -1,0 +1,56 @@
+{
+  "run_number": 8,
+  "agent": "bob",
+  "agent_type": "front-end-developer",
+  "parent_invocation_id": "f7c60593-b305-4cbd-9ed8-5dded2eae5cb",
+  "role": "front-end-developer",
+  "job_id": "2m6oxm88",
+  "unit_id": "wu_cd4984aed4",
+  "run_reason": "fed_unit",
+  "run_environment": "production",
+  "exe": "/Users/ignacio.becerra/.nvm/versions/node/v22.22.1/bin/bob",
+  "started_at": "20260717T223314Z",
+  "returncode": 0,
+  "duration_seconds": 297.6,
+  "status": "done",
+  "progress_marker": "wu_cd4984aed4-complete",
+  "message": "Migrated nlp-visual-editor/views from Carbon v10 to v11. Updated imports (carbon-components-react → @carbon/react), migrated Tabs to v11 composite structure, updated icon imports (Document24/Close24 → Document/Close with size prop), changed CSS class prefix (bx-- → cds--). Build passes.",
+  "stdout_tokens_estimate": 19468,
+  "token_accounting": {
+    "method": "chars4_estimate",
+    "exact": false,
+    "agent": "bob",
+    "model": null,
+    "estimated_input_tokens": 12724,
+    "estimated_output_tokens": 6713,
+    "estimated_total_tokens": 19437,
+    "estimated_cache_read_input_tokens": null,
+    "estimated_cache_creation_input_tokens": null,
+    "total_cost_usd": null,
+    "confidence": "medium"
+  },
+  "commit": {
+    "hash": "79ac04ad1d7368aba5935eca9de2785a7ffd1cec",
+    "short_hash": "79ac04a",
+    "subject": "migrate(wu_cd4984aed4): nlp-visual-editor/views",
+    "date": "2026-07-17 15:37:51 -0700",
+    "branch": "mig/2m6oxm88--nlp-visual-editor-views",
+    "diff_stat": ".../views/components/table-results.jsx             |  4 +-\n src/nlp-visual-editor/views/document-viewer.jsx    | 10 ++--\n src/nlp-visual-editor/views/tabular-view.jsx       | 53 +++++++++++++++++-----\n src/nlp-visual-editor/views/tabular-view.scss      |  4 +-\n 4 files changed, 52 insertions(+), 19 deletions(-)",
+    "files_changed": [
+      "src/nlp-visual-editor/views/components/table-results.jsx",
+      "src/nlp-visual-editor/views/document-viewer.jsx",
+      "src/nlp-visual-editor/views/tabular-view.jsx",
+      "src/nlp-visual-editor/views/tabular-view.scss"
+    ]
+  },
+  "scope_drift": {
+    "outOfScopeFiles": [
+      "src/nlp-visual-editor/views/components/table-results.jsx"
+    ],
+    "affectedGroups": [
+      "component_group"
+    ],
+    "protectedDependencyEdits": [],
+    "count": 1
+  }
+}

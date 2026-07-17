@@ -1,0 +1,7 @@
+OK[using tool attempt_completion: Successfully completed | Cost: 0.05]
+---output---
+
+OK
+
+---output---
+

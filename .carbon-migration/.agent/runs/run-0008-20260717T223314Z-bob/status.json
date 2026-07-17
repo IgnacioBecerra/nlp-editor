@@ -1,0 +1,5 @@
+{
+  "status": "done",
+  "message": "Migrated nlp-visual-editor/views from Carbon v10 to v11. Updated imports (carbon-components-react \u2192 @carbon/react), migrated Tabs to v11 composite structure, updated icon imports (Document24/Close24 \u2192 Document/Close with size prop), changed CSS class prefix (bx-- \u2192 cds--). Build passes.",
+  "progress_marker": "wu_cd4984aed4-complete"
+}
