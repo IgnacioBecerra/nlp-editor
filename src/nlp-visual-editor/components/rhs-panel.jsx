@@ -17,8 +17,8 @@ limitations under the License.
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Button, TextInput } from 'carbon-components-react';
-import { Edit16 } from '@carbon/icons-react';
+import { Button, TextInput } from '@carbon/react';
+import { Edit } from '@carbon/react/icons';
 
 import './rhs-panel.scss';
 import {
@@ -101,7 +101,7 @@ class RHSPanel extends React.Component {
         <div className="title">
           <span>{label}</span>
           <Button
-            renderIcon={Edit16}
+            renderIcon={Edit}
             iconDescription="Edit label"
             size="sm"
             hasIconOnly

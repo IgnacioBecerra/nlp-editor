@@ -16,7 +16,7 @@ limitations under the License.
 */
 
 import React from 'react';
-import { Modal, Select, SelectItem } from 'carbon-components-react';
+import { Modal, Select, SelectItem } from '@carbon/react';
 
 function LanguageModal(props) {
   const [language, setLanguage] = React.useState(props.currentLanguage);

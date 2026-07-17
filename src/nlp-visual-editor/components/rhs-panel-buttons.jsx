@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 import React from 'react';
-import { Button, ButtonSet } from 'carbon-components-react';
+import { Button, ButtonSet } from '@carbon/react';
 
 function RHSPanelButtons({ onClosePanel, onSavePanel, showSaveButton = true }) {
   return (
