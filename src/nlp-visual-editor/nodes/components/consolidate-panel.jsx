@@ -17,7 +17,7 @@ limitations under the License.
 import React, { Children, isValidElement, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Checkbox, Dropdown, TextArea } from 'carbon-components-react';
+import { Checkbox, Dropdown, TextArea } from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
 
 import { getImmediateUpstreamNodes } from '../../../utils';
@@ -92,7 +92,6 @@ class ConsolidatePanel extends React.Component {
         <Dropdown
           id="output"
           size="sm"
-          light
           label="Output Column"
           initialSelectedItem={this.state.upstreamNodes.find(
             (item) => this.state.consolidateTarget == item.label,
@@ -108,7 +107,6 @@ class ConsolidatePanel extends React.Component {
         <Dropdown
           id="method"
           size="sm"
-          light
           label="Method"
           initialSelectedItem={this.state.consolidateMethod.find(
             (item) => this.state.consolidatePolicy == item.id,

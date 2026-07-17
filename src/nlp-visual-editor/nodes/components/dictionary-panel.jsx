@@ -38,9 +38,10 @@ import {
   TableContainer,
   TableToolbarContent,
   DataTable,
-} from 'carbon-components-react';
+  Pagination,
+} from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
-import { Delete16 } from '@carbon/icons-react';
+import { TrashCan } from '@carbon/icons-react';
 import classNames from 'classnames';
 import { connect } from 'react-redux';
 import { parse } from 'csv-parse/browser/esm';
@@ -48,7 +49,6 @@ import { parse } from 'csv-parse/browser/esm';
 import './dictionary-panel.scss';
 
 import { saveNlpNode, setShowRightPanel } from '../../../redux/slice';
-import { Pagination } from 'carbon-components-react';
 
 class DictionaryPanel extends React.Component {
   reader = new FileReader();
@@ -308,7 +308,8 @@ class DictionaryPanel extends React.Component {
                       onClick={() => {
                         this.onDeleteItems(props);
                       }}
-                      renderIcon={Delete16}
+                      renderIcon={TrashCan}
+                      iconDescription="Delete"
                     />
                   </TableBatchActions>
                   <TableToolbarContent style={{ height: 'fit-content' }}>

@@ -19,7 +19,7 @@ import {
   Button,
   FileUploader,
   FileUploaderItem,
-} from 'carbon-components-react';
+} from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
 import { connect } from 'react-redux';
 import './input-panel.scss';
@@ -164,7 +164,7 @@ class InputPanel extends React.Component {
         )}
         {!showFileControl && (
           <div className="files-selected">
-            <label className="bx--file--label">Files to upload</label>
+            <label className="cds--file--label">Files to upload</label>
             {fileItems}
             {!isValid && (
               <Button

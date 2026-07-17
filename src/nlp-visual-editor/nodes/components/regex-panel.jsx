@@ -25,7 +25,7 @@ import {
   RadioButton,
   RadioButtonGroup,
   TextArea,
-} from 'carbon-components-react';
+} from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
 
 import './regex-panel.scss';

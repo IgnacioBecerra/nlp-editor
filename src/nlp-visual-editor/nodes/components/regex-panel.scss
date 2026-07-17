@@ -17,14 +17,14 @@ limitations under the License.
 .regex-panel {
   height: 100%;
 
-  .bx--tab-content {
+  .cds--tab-content {
     height: 100%;
   }
 
   .regex-panel-contents {
     height: 100%;
 
-    > .bx--form-item {
+    > .cds--form-item {
       padding: 1rem 0;
     }
 
@@ -41,7 +41,7 @@ limitations under the License.
           display: inline-flex;
         }
 
-        > .bx--form-item {
+        > .cds--form-item {
           padding: 0 0;
           flex: 0;
         }
@@ -58,7 +58,7 @@ limitations under the License.
     }
 
     .chk-series {
-      > .bx--form-item {
+      > .cds--form-item {
         padding: 0 0;
       }
     }

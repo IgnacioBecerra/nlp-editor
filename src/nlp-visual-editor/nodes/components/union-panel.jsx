@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
-import { Information24 } from '@carbon/icons-react';
+import { Information } from '@carbon/icons-react';
 import './union-panel.scss';
 
 import { getImmediateUpstreamNodes } from '../../../utils';
@@ -75,7 +75,7 @@ class UnionPanel extends React.Component {
   render() {
     return (
       <div className="union-panel">
-        <Information24 aria-label="Information" className="info-icon" />
+        <Information size={24} aria-label="Information" className="info-icon" />
         <span>No configuration necessary.</span>
         <RHSPanelButtons
           showSaveButton={false}

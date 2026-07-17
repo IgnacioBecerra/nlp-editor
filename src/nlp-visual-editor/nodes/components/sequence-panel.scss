@@ -17,7 +17,7 @@ limitations under the License.
 .sequence-panel{
     .attributes {
 		line-height: 30px;
-		.bx--checkbox-wrapper {
+		.cds--checkbox-wrapper {
 			float: left;
 			padding: 0;
 		}
@@ -32,7 +32,7 @@ limitations under the License.
             display: inline-flex;
         }
 
-        >.bx--form-item {
+        >.cds--form-item {
             padding: 0 0;
             flex: 0;
         }
@@ -47,7 +47,7 @@ limitations under the License.
         }
     }
 
-    .bx--form-item{
+    .cds--form-item{
         padding-top: 1.5rem;
     }
 }

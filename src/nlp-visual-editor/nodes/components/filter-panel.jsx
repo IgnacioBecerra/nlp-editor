@@ -16,7 +16,7 @@ limitations under the License.
 */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox, TextInput, Dropdown } from 'carbon-components-react';
+import { Checkbox, TextInput, Dropdown } from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
 import classNames from 'classnames';
 import { connect } from 'react-redux';
@@ -129,7 +129,6 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="filterType"
           size="sm"
-          light
           initialSelectedItem={this.state.filterTypeItems.find(
             (item) => this.state.filterType == item.id,
           )}
@@ -146,7 +145,6 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="primary"
           size="sm"
-          light
           initialSelectedItem={this.state.upstream.find(
             (item) => this.state.primary == item.id,
           )}
@@ -163,7 +161,6 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="scope"
           size="sm"
-          light
           initialSelectedItem={this.state.scopeItems.find(
             (item) => this.state.scope == item.id,
           )}
@@ -180,7 +177,6 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="funcName"
           size="sm"
-          light
           initialSelectedItem={this.state.funcNameItems.find(
             (item) => this.state.funcName == item.id,
           )}
@@ -197,7 +193,6 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="secondary"
           size="sm"
-          light
           initialSelectedItem={this.state.upstream.find(
             (item) => this.state.secondary == item.id,
           )}

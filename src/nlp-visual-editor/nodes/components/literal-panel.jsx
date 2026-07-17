@@ -16,7 +16,7 @@ limitations under the License.
 */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox, TextInput } from 'carbon-components-react';
+import { Checkbox, TextInput } from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
 import classNames from 'classnames';
 import { connect } from 'react-redux';

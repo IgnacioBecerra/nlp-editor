@@ -23,9 +23,9 @@ import {
   Checkbox,
   Dropdown,
   TextArea,
-} from 'carbon-components-react';
+} from '@carbon/react';
 import RHSPanelButtons from '../../components/rhs-panel-buttons';
-import { Edit16 } from '@carbon/icons-react';
+import { Edit } from '@carbon/icons-react';
 import './sequence-panel.scss';
 
 import { getImmediateUpstreamNodes } from '../../../utils';
@@ -216,7 +216,7 @@ class SequencePanel extends React.Component {
             {this.state.renamed || this.state.label}
             <Button
               id={`button-${this.state.nodeId}`}
-              renderIcon={Edit16}
+              renderIcon={Edit}
               iconDescription="Edit label"
               size="sm"
               hasIconOnly
@@ -263,7 +263,7 @@ class SequencePanel extends React.Component {
               {node.renamed || node.label}
               <Button
                 id={`button-${node.nodeId}`}
-                renderIcon={Edit16}
+                renderIcon={Edit}
                 iconDescription="Edit label"
                 size="sm"
                 hasIconOnly
