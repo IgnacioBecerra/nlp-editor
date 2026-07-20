@@ -92,6 +92,7 @@ class ConsolidatePanel extends React.Component {
         <Dropdown
           id="output"
           size="sm"
+          titleText="Output column"
           label="Output Column"
           initialSelectedItem={this.state.upstreamNodes.find(
             (item) => this.state.consolidateTarget == item.label,
@@ -107,6 +108,7 @@ class ConsolidatePanel extends React.Component {
         <Dropdown
           id="method"
           size="sm"
+          titleText="Consolidation method"
           label="Method"
           initialSelectedItem={this.state.consolidateMethod.find(
             (item) => this.state.consolidatePolicy == item.id,

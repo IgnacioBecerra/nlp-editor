@@ -300,7 +300,7 @@ class DictionaryPanel extends React.Component {
           }
         >
           {(props) => (
-            <TableContainer style={{ marginTop: '10px' }}>
+            <TableContainer style={{ marginTop: 'var(--cds-spacing-03, 8px)' }}>
               <TableToolbar>
                 <TableBatchActions
                   {...props.getBatchActionProps({

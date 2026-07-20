@@ -22,10 +22,10 @@ function RHSPanelButtons({ onClosePanel, onSavePanel, showSaveButton = true }) {
     <>
       {showSaveButton ? (
         <ButtonSet className="rhs-buttons">
-          <Button kind="secondary" onClick={onClosePanel}>
+          <Button kind="secondary" size="md" onClick={onClosePanel}>
             Cancel
           </Button>
-          <Button kind="primary" onClick={onSavePanel}>
+          <Button kind="primary" size="md" onClick={onSavePanel}>
             Save
           </Button>
         </ButtonSet>
@@ -33,6 +33,7 @@ function RHSPanelButtons({ onClosePanel, onSavePanel, showSaveButton = true }) {
         <Button
           className="rhs-buttons btn-close"
           kind="secondary"
+          size="md"
           onClick={onClosePanel}
         >
           Close

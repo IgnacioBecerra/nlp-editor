@@ -34,6 +34,7 @@ function LanguageModal(props) {
   return (
     <Modal
       open
+      modalHeading="Select Language"
       primaryButtonText="OK"
       secondaryButtonText="Cancel"
       onRequestSubmit={() => {

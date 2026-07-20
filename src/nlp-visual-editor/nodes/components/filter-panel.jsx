@@ -129,6 +129,7 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="filterType"
           size="sm"
+          titleText="Filter type"
           initialSelectedItem={this.state.filterTypeItems.find(
             (item) => this.state.filterType == item.id,
           )}
@@ -145,6 +146,7 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="primary"
           size="sm"
+          titleText="Primary"
           initialSelectedItem={this.state.upstream.find(
             (item) => this.state.primary == item.id,
           )}
@@ -161,6 +163,7 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="scope"
           size="sm"
+          titleText="Scope"
           initialSelectedItem={this.state.scopeItems.find(
             (item) => this.state.scope == item.id,
           )}
@@ -177,6 +180,7 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="funcName"
           size="sm"
+          titleText="Function"
           initialSelectedItem={this.state.funcNameItems.find(
             (item) => this.state.funcName == item.id,
           )}
@@ -193,6 +197,7 @@ class FilterPanel extends React.Component {
         <Dropdown
           id="secondary"
           size="sm"
+          titleText="Secondary"
           initialSelectedItem={this.state.upstream.find(
             (item) => this.state.secondary == item.id,
           )}
